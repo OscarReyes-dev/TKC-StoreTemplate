@@ -28,14 +28,14 @@
 
 
   <!-- <div class="page"> -->
-
-  <!-- Header -->
+  
+    <!-- Header -->
   <header id="header">
     <!-- Top Row -->
     <div class="top-row">
       <div class="grid-container">
         <div class="grid-item item-1">
-          <button class="hamburger hamburger--spring" type="button">
+          <button class="hamburger hamburger--spring" type="button" aria-label="Toggle Menu">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -52,22 +52,24 @@
           <div class="icons">
             <ul class="icons-list">
               <li class="icon-item">
-                <!-- <a href=""> -->
-                <button class="search-Button icon">
-                  <i class="fa fa-search" aria-hidden="true"></i>
+                <button class="search-Button icon" aria-label="Search Store Inventory">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
                 </button>
-
-                <!-- </a> -->
               </li>
               <li class="icon-item user-account">
                 <a href="" class="icon">
-                  <i class="far fa-user-circle" aria-hidden="true"></i>
-                  <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>
                 </a>
               </li>
               <li class="icon-item">
                 <a href="cart-page.html" class="icon">
-                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -86,163 +88,67 @@
           <ul class="nav justify-content-center">
             <!-- IPhone Cases -->
             <li class="nav-item">
-              <a class="nav-link active" href="products-page.html">iPhone Cases<i class="fa fa-angle-right"
+              <a class="nav-link active" href="iPhone-products-page.html">iPhone Cases<i class="fa fa-angle-right"
                   aria-hidden="true"></i></a>
-                <!-- New DropDown -->
-                  <div class="items container">
-                    
-                    
-                    <div class="row justify-content-center">
-                      <div class="col-12">
-                        <div class="products-Column">
-                          <div class="prodct-Title-Container">
-                            <a href="" class="product-Title">iPhone Cases</a>
-                          </div>
-                          
-                          <ul class="eee product-Gen-List">
-                            <li class="product-Generation">iPhone 7</li>
-                            <li class="product-Generation">iPhone 7 Plus</li>
-                            <li class="product-Generation">iPhone 11</li>
-                            <li class="product-Generation">iPhone 11 Pro</li>
-                            <li class="product-Generation">iPhone 11 Pro Max</li>
-                            <li class="product-Generation">iPhone SE</li>
-                            <li class="product-Generation">iPhone 12 mini</li>
-                            <li class="product-Generation">iPhone 12</li>
-                            <li class="product-Generation">iPhone 12 Pro</li>
-                            <li class="product-Generation">iPhone 12 Pro Max</li>
-                          </ul>
-                        </div>
+              <!-- New DropDown -->
+              <div class="items container">
+
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="products-Column">
+                      <div class="prodct-Title-Container">
+                        <a href="" class="product-Title">iPhone Cases</a>
+                      </div>
+                      <div class="submenu-wrapper">
+                        
+                      <div class="nav-Col">
+                        <ul class="product-Gen-List">
+                          <li class="product-Generation"><a href="">iPhone 7</a></li>
+                          <li class="product-Generation"><a href="">iPhone 7 Plus</a></li>
+                          <li class="product-Generation"><a href="">iPhone 11</a></li>
+                          <li class="product-Generation"><a href="">iPhone 11 Pro</a></li>
+                          <li class="product-Generation"><a href="">iPhone 11 Pro Max</a></li>
+                          <li class="product-Generation"><a href="">iPhone SE</a></li>
+
+                        </ul>
+                      </div>
+                      <div class="nav-Col">
+                        <ul class="product-Gen-List">
+                          <li class="product-Generation"><a href="">iPhone 12 mini</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12 Pro</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12 Pro Max</a></li>
+                        </ul>
+                      </div>
+                      <div class="nav-Col">
+                        <ul class="product-Gen-List">
+                          <li class="product-Generation"><a href="">iPhone 12 mini</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12 Pro</a></li>
+                          <li class="product-Generation"><a href="">iPhone 12 Pro Max</a></li>
+                        </ul>
                       </div>
                       
+                      </div>
                     </div>
-
-                    <!-- <div class="Last-Column col">
-                      <div class="container">
-                        <div class="col">
-                          <img class="wall-Image" src="assets/images/iPhone-Accesories/Extra-Iphone-Products-Images/cellphone-floats-above-a-soft-pink-background.jpg" alt="">
-                        </div>
-                      </div>
-                      
-                    </div> -->
                   </div>
+                </div>
 
-              <!-- Secondary Row Dropdown Link List Original -->
-              <!-- <ul class="items">
-                <li class="mega-nav-items">
-                  <a href="" class="col-title">IPhone Cases</a>
-                  GrandChild Link List
-                  <ul class="sub-items">
-                    <li class="item">
-                      <a href="">Iphone 6</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 7</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 8</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 9</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 10</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 11</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 12</a>
-                    </li>
-                  </ul>
-                </li>
-                
-              </ul> -->
+              </div>
             </li>
-            <!-- IPad Cases -->
-            <li class="nav-item">
-              <a class="nav-link active" href="products-page.html">iPad Cases<i class="fa fa-angle-right"
-                  aria-hidden="true"></i></a>
-                <!-- New DropDown -->
-                  <div class="items container">
-                    
-                    
-                    <div class="row justify-content-center">
-                      <div class="col-12">
-                        <div class="products-Column">
-                          <div class="prodct-Title-Container">
-                            <a href="" class="product-Title">iPad Cases</a>
-                          </div>
-                          
-                          <ul class="eee product-Gen-List">
-                            <li class="product-Generation">iPad 7</li>
-                            <li class="product-Generation">iPad 7 Plus</li>
-                            <li class="product-Generation">iPad 11</li>
-                            <li class="product-Generation">iPad 11 Pro</li>
-                            <li class="product-Generation">iPad 11 Pro Max</li>
-                            <li class="product-Generation">iPad SE</li>
-                            <li class="product-Generation">iPad 12 mini</li>
-                            <li class="product-Generation">iPad 12</li>
-                            <li class="product-Generation">iPad 12 Pro</li>
-                            <li class="product-Generation">iPad 12 Pro Max</li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                    </div>
 
-                    <!-- <div class="Last-Column col">
-                      <div class="container">
-                        <div class="col">
-                          <img class="wall-Image" src="assets/images/iPhone-Accesories/Extra-Iphone-Products-Images/cellphone-floats-above-a-soft-pink-background.jpg" alt="">
-                        </div>
-                      </div>
-                      
-                    </div> -->
-                  </div>
-
-              <!-- Secondary Row Dropdown Link List Original -->
-              <!-- <ul class="items">
-                <li class="mega-nav-items">
-                  <a href="" class="col-title">IPhone Cases</a>
-                  GrandChild Link List
-                  <ul class="sub-items">
-                    <li class="item">
-                      <a href="">Iphone 6</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 7</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 8</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 9</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 10</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 11</a>
-                    </li>
-                    <li class="item">
-                      <a href="">Iphone 12</a>
-                    </li>
-                  </ul>
-                </li>
-                
-              </ul> -->
-            </li>
             <!-- Air Pod Cases -->
             <li class="nav-item">
-              <a class="nav-link active" href="#">AirPod Cases<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <a class="nav-link active" href="airpod-products-page.html">AirPod Cases<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </li>
             <!-- Iphone Pop Out Holders -->
             <li class="nav-item">
-              <a class="nav-link active" href="#">Pop-Out Holders<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <a class="nav-link active" href="popout-products-page.html">Pop-Out Holders<i class="fa fa-angle-right"
+                  aria-hidden="true"></i></a>
             </li>
             <!-- IPhone Cables -->
             <li class="nav-item">
-              <a class="nav-link active" href="#">Iphone Cables<i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+              <a class="nav-link active" href="charging-products.html">Charging Cables<i class="fa fa-angle-right" aria-hidden="true"></i> </a>
             </li>
 
           </ul>
