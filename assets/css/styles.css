@@ -210,14 +210,15 @@ header .header-secondary-row .header-nav .meg-nav .nav .nav-item:hover .items{
   display: flex;
   position: absolute;
 }
-header .header-secondary-row .header-nav .meg-nav .nav .nav-item:hover .items .wall-Image{
-  height: 300px;
-  /* width: 200px;/ */
-}
 header .header-secondary-row .items .prodct-Title-Container{
-border-bottom: 1px dotted black;
-text-align: left;
-
+  border-bottom: 1px solid rgb(231, 231, 231) ;
+  text-align: center;
+}
+header .header-secondary-row .items .submenu-wrapper{
+  display: inline-flex;
+}
+header .header-secondary-row .items .submenu-wrapper .nav-Col{
+  padding: 0 2em;
 }
 header .header-secondary-row .items .prodct-Title-Container .product-Title{
   color: black;
@@ -227,7 +228,11 @@ header .header-secondary-row .items .product-Gen-List{
   padding-left: 0rem;
   padding-top: 1em;
 }
-
+/* header .header-secondary-row .columns{
+  float: left;
+  position: relative;
+  margin-right: 20px;
+} */
 /*---------- Hamburger Button Styling -----------*/
 
 .hamburger {
