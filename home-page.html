@@ -23,8 +23,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
-<body class="closed-menu">
-    <!-- Center Popup -->
+<body>
+  <!-- Page Overlay -->
+  <!-- <div class="overlayClosed overlayNowOpened" class="overlayNowOpened"></div> -->
+  <!-- Center Popup -->
   <!-- <div class="center-Popup">
   <div class="container-fluid popup-Square">
     <div class="row">
@@ -68,56 +70,28 @@
       </div>
   </div>
   </div>
-  </div> -->
-
-    <!-- Cart Drawer -->
-  <section class="cart-drawer">
+</div> -->
 
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
-        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-            <button class="close-Drawer hamburger--spring is-active" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-            <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-            </button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div>
-                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt="" loading="lazy"
-                  width="120">
-              </div>
-            </div>
-            <div class="col">
-              description
-            </div>
-            <div class="col">
-              price
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- <Section> -->
 
-    <!-- Header -->
+  <!-- Header -->
   <header id="header">
     <!-- Banner -->
-    <div class="banner-Block">
+    <!-- <div class="banner-Block">
       <div class="wrapper-1 container-fluid">
         <div class="banner-Text row">
           <div class="d-flex justify-content-center text-center">FREE SHIPPING ON ALL ORDERS OVER $150 ✈️ </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+
     <!-- Top Row -->
     <div class="top-row">
       <div class="grid-container">
+
+
         <div class="grid-item item-1">
           <button class="hamburger hamburger--spring" type="button" aria-label="Toggle Menu">
             <span class="hamburger-box">
@@ -125,6 +99,8 @@
             </span>
           </button>
         </div>
+
+
         <div class="grid-item item-2">
           <div class="desktop-logo">
             <a href="index.html">
@@ -136,7 +112,8 @@
           <div class="icons">
             <ul class="icons-list">
               <li class="icon-item">
-                <button class="search-Button icon" aria-label="Search Store Inventory">
+                <button class="search-Button icon" aria-label="Search Store Inventory" class="btn btn-primary"
+                  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-search" viewBox="0 0 16 16">
                     <path
@@ -162,9 +139,9 @@
                       d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                   </svg>
                   <!-- <div class="cart-Items"> -->
-                    <div class="numberofItems">
-                        13
-                    </div>
+                  <div class="numberofItems">
+                    13
+                  </div>
                   <!-- </div> -->
                 </a>
               </li>
@@ -230,6 +207,7 @@
                 <div class="row justify-content-center">
                   <div class="link-blocks col-12">
                     <div class="products-Column">
+
                       <div class="prodct-Title-Container">
                         <a href="" class="product-Title">Mouse Brands</a>
                       </div>
@@ -254,6 +232,7 @@
                           </ul>
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -299,8 +278,779 @@
     </div>
   </header>
 
-        <!-- Sidebar Navigation Menu -->
-  <section class="sidebar-navigation" class="open-menu">
+  <!-- Cart Drawer -->
+  <div class="cart-drawer">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+      <header class="row offcanvas-header">
+                    <div class="cart-Header col-5">
+                        <div class=" offcanvas-title" id="offcanvasExampleLabel">Shopping Bag 
+                          <!-- <div class="cart-Product--Quantity">(5 Items)</div> -->
+                        </div>
+                    </div>
+                    <div class="col-3">
+                      items 3
+                    </div>
+                
+                    <button class="col-2 close-Drawer hamburger--spring is-active" type="button" data-bs-dismiss="offcanvas"
+                      aria-label="Close">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </button>
+        </header>
+
+      <div class="offcanvas-body">
+        <div class="container">
+          <!-- Products -->
+          <div class="cart-Product row">
+            <div class="col-4">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-8">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+
+
+          <div class="cart-Product row">
+            <div class="col-4">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-8">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-4">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-8">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+          <div class="cart-Product row">
+            <div class="col-5">
+              <div class="cart-Product--Image">
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="cart-Product--Image" alt="" loading="lazy"
+                   style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="cart-Product--Info col-7">
+
+              <div class="row">
+                <div class="cart-Product--Collection col">
+                  Vor-Tech
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Title col">
+                  Lava 2WR
+                </div>
+              </div>
+              <div class="product-Pricing">
+              <div class="row">
+                <div class="col-6">
+                  $50.00
+                </div>
+                <div class="col-6">
+                  <!-- $25.00 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="cart-Product--Quantity col-6">
+                  Quantity: 3
+                </div>
+                <div class="cart-Product--Price col-6">
+                  $75.00
+                </div>
+              </div>
+              </div>
+
+            
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="cart-Footer">
+        <!-- Subtotal -->
+        <div class="cart-Quantity row">
+          <!-- <div class="col cart-Product--Quantity">(5 Items)</div> -->
+        </div>
+        <div class="cart-Subtotal row">
+          <div class="cart-Subtotal--Text col-8">
+            <!-- <div class=""> -->
+              SUBTOTAL:
+            <!-- </div> -->
+          </div>
+          <div class="cart-Subtotal--Amount col-3">
+            $300.00
+          </div>
+        </div>
+        <!-- Checkout Button -->
+        <div class="checkout-Button">
+          <div>
+            <button class="checkout-Btn">
+              CHECKOUT
+            </button>
+          </div>
+        </div>
+    </footer>
+
+    </div>
+  </div>
+
+  <!-- Search Results Pop Up -->
+  <div class="search-Results">
+    <!-- <div class="search-Results-Wall"> -->
+
+
+
+
+    <!-- New Bootstrap OffCanvas Search Results -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="search-Results-Overlay">
+        <div class="search-Results-Container container-fluid">
+          <!-- Top Row Header -->
+          <div class="top-row row">
+            <header>
+              <div class="top-row">
+                <div class="grid-container">
+                  <div class="grid-item item-1">
+
+                  </div>
+                  <div class="grid-item item-2">
+                    <div class="desktop-logo">
+                      <a href="index.html">
+                        <img class="popup-Logo" src="assets/images/logos/TKC-1logo.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item item-3">
+                    <div class="close-Search-Btn">
+                      <button class="close-Search-Canvas--btn hamburger--spring is-active" id="close-Search" type="button"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <!-- Search Input Row -->
+          <div class="input-Row row">
+            <div class="col-12">
+              <div class="input-box">
+                <input type="text" name="email-signup" id="search-Results-Input" placeholder="Search Store...">
+              </div>
+            </div>
+          </div>
+          <!-- Store Logo -->
+          <!-- <div class="search-Header row">
+                      <div class="col-12">
+                        <div class="popular-Searches">
+                          Popular Searches: 
+                          <ul>
+                            <li><a href="">Mechanical Keyboards</a></li>
+                            <li><a href="">Keyboards</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> -->
+          <!-- Search Product -->
+          <div class="searched-products container">
+            <div class="row">
+              <div class="col-3">
+                <div class="popular-Searches">
+                  Popular Searches:
+                  <ul>
+                    <li><a href="">Mechanical Keyboards</a></li>
+                    <li><a href="">Keyboards</a></li>
+                    <li><a href="">Mouses</a></li>
+                    <li><a href="">Vor-Tech</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 ">
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc1.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-All-Products--btn col">
+                  <div class="textbox-button">
+                    <button aria-label="Shop Collection" class="shop-Collection--Btn">
+                      <a href="">View All Product (659)</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End of New Bootstrap OffCanvas Search -->
+
+
+    <!-- </div> -->
+  </div>
+
+  <!-- Sidebar Navigation Menu -->
+  <div class="sidebar-navigation" class="open-menu">
     <nav>
       <ul class="level-1">
         <!-- Header -->
@@ -373,259 +1123,10 @@
         <li class="parent"><a href="#"> Account | Sign In</a></li>
       </ul>
     </nav>
-  </section>
+  </div>
+<!-- </Section> -->
 
-        <!-- Search Results Pop Up -->
-  <section class="search-Results">
-    <!-- <div class="search-Results-Wall"> -->
-    <div class="search-Results-Overlay">
-      <div class="search-Results-Container container-fluid">
-        <!-- Top Row Header -->
-        <div class="top-row row">
-            <header>
-              <div class="top-row">
-                <div class="grid-container">
-                  <div class="grid-item item-1">
-                    
-                  </div>
-                  <div class="grid-item item-2">
-                    <div class="desktop-logo">
-                      <a href="index.html">
-                        <img class="popup-Logo" src="assets/images/logos/TKC-1logo.png" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="grid-item item-3">
-                    <div class="close-Search-Btn">
-                      <button class="hamburger hamburger--spring is-active" id="close-Search" type="button">
-                        <span class="hamburger-box">
-                          <span class="hamburger-inner"></span>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </header>
-        </div>
-        <!-- Search Input Row -->
-        <div class="input-Row row">
-          <div class="col-12">
-            <div class="input-box">
-              <input type="text" name="email-signup" id="search-Results-Input" placeholder="Search Store...">
-            </div>
-          </div>
-        </div>
-                <!-- Store Logo -->
-                <!-- <div class="search-Header row">
-                  <div class="col-12">
-                    <div class="popular-Searches">
-                      Popular Searches: 
-                      <ul>
-                        <li><a href="">Mechanical Keyboards</a></li>
-                        <li><a href="">Keyboards</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> -->
-        <!-- Search Product -->
-        <div class="searched-products container">
-          <div class="row">
-        <div class="col-3">
-          <div class="popular-Searches">
-            Popular Searches: 
-            <ul>
-              <li><a href="">Mechanical Keyboards</a></li>
-              <li><a href="">Keyboards</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-9">
-          <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 ">
-
-
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                          
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/wc1.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="product col">
-              <div class="produt-container">
-                <a href="" class="product-block">
-                  <div class="grid-item">
-                    <div class="product-img">
-                      <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
-                      <div class="overlay">
-                        <div class="text">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="item--description">
-                      <div class="collection--title">Vor-Tech</div>
-                      <div class="product--item-title">
-                        <div class="prod--title">Lava 2WR</div>
-                      </div>
-                      <div class="product--item-price">$280.00</div>
-                    </div>
-    
-                  </div>
-                </a> 
-              </div>
-            </div>
-    
-          </div>
-        </div>
-      </div>
-
-        </div>
-
-      </div>
-    </div>
-    <!-- </div> -->
-  </section>
-
-        <!-- Hero Section -->
+  <!-- Hero Section -->
   <section class="hero-section">
     <div class="hero-grid">
       <div class="hero-style2">
@@ -675,11 +1176,14 @@
                   <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -698,7 +1202,8 @@
               <div class="centered--button">
                 <div class="textbox-button">
                   <button aria-label="Add to Cart" class="add-To-Cart--Btn">
-                    <a>Add to Cart</a>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" class="icon">Add to Cart</a>
                   </button>
                 </div>
               </div>
@@ -716,9 +1221,12 @@
                   <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -753,9 +1261,12 @@
                   <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -790,9 +1301,12 @@
                   <img src="assets/images/keyboard-images/product-images/wc1.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -827,9 +1341,12 @@
                   <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -864,9 +1381,12 @@
                   <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -962,9 +1482,12 @@
                   <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1000,9 +1523,12 @@
                   <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1037,9 +1563,12 @@
                   <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1074,9 +1603,12 @@
                   <img src="assets/images/keyboard-images/product-images/wc1.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1111,9 +1643,12 @@
                   <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1148,9 +1683,12 @@
                   <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt="" loading="lazy">
                   <div class="overlay">
                     <div class="text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                       </svg>
                     </div>
                   </div>
@@ -1206,7 +1744,8 @@
                 <div class="input-box">
                   <input type="text" name="email-signup" id="newsletter" placeholder="Email Address">
                 </div>
-                <button type="submit" title="Sign Up" class="button shop-Collection--Btn" aria-label="Click to Sign Up">Sign Up</button>
+                <button type="submit" title="Sign Up" class="button shop-Collection--Btn"
+                  aria-label="Click to Sign Up">Sign Up</button>
               </div>
             </div>
           </div>
