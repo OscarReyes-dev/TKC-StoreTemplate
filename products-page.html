@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>⌨️ The Keyboard Crew</title>
-  <!-- Reset CSS -->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <!-- My Stylsheet -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <!-- Bootstrap Min CSS CDN Version 5.0.0-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-  <!-- FontAwsome CDN  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>⌨️ The Keyboard Crew</title>
+    <link rel="shortcut icon" href="#">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- My Stylsheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Min CSS CDN Version 5.0.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  
 <body class="closed-menu">
 
 
@@ -30,8 +35,52 @@
 
   <!-- <div class="page"> -->
   
+  <!-- Cart Drawer -->
+  <section class="cart-drawer">
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <button class="close-Drawer hamburger--spring is-active" type="button" data-bs-dismiss="offcanvas"
+          aria-label="Close">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt="" loading="lazy"
+                  width="120">
+              </div>
+            </div>
+            <div class="col">
+              description
+            </div>
+            <div class="col">
+              price
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Header -->
   <header id="header">
+    <!-- Banner -->
+    <div class="banner-Block">
+      <div class="wrapper-1 container-fluid">
+        <div class="banner-Text row">
+          <div class="d-flex justify-content-center text-center">FREE SHIPPING ON ALL ORDERS OVER $150 ✈️ </div>
+        </div>
+      </div>
+    </div>
     <!-- Top Row -->
     <div class="top-row">
       <div class="grid-container">
@@ -53,8 +102,9 @@
           <div class="icons">
             <ul class="icons-list">
               <li class="icon-item">
-                <button class="search-Button icon" aria-label="Search Store Inventory">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                <button class="search-Button icon" aria-label="Search Store Inventory" class="btn btn-primary"
+                  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-search" viewBox="0 0 16 16">
                     <path
                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -70,13 +120,19 @@
                   </svg>
                 </a>
               </li>
-              <li class="icon-item">
-                <a href="cart-page.html" class="icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag"
+              <li class="icon-item shopping-Bag">
+                <a class="btn cartAndItems" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                  aria-controls="offcanvasExample" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
                     viewBox="0 0 16 16">
                     <path
                       d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                   </svg>
+                  <!-- <div class="cart-Items"> -->
+                  <div class="numberofItems">
+                    13
+                  </div>
+                  <!-- </div> -->
                 </a>
               </li>
             </ul>
@@ -286,31 +342,292 @@
     </nav>
   </section>
 
+  <!-- Search Results Pop Up -->
+  <section class="search-Results">
+    <!-- <div class="search-Results-Wall"> -->
 
 
 
 
-    <!-- <section class="breadcrumb-Row">
-      <div class="fff">
-        <div class="qqq container-fluid">
-          <div class="eee row">
+    <!-- New Bootstrap OffCanvas Search Results -->
 
-            <div class=" col">
-              <nav
-                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-                aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Jordan</li>
-                </ol>
-              </nav>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="search-Results-Overlay">
+        <div class="search-Results-Container container-fluid">
+          <!-- Top Row Header -->
+          <div class="top-row row">
+            <header>
+              <div class="top-row">
+                <div class="grid-container">
+                  <div class="grid-item item-1">
+
+                  </div>
+                  <div class="grid-item item-2">
+                    <div class="desktop-logo">
+                      <a href="index.html">
+                        <img class="popup-Logo" src="assets/images/logos/TKC-1logo.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item item-3">
+                    <div class="close-Search-Btn">
+                      <button class="hamburger hamburger--spring is-active" id="close-Search" type="button"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <!-- Search Input Row -->
+          <div class="input-Row row">
+            <div class="col-12">
+              <div class="input-box">
+                <input type="text" name="email-signup" id="search-Results-Input" placeholder="Search Store...">
+              </div>
+            </div>
+          </div>
+          <!-- Store Logo -->
+          <!-- <div class="search-Header row">
+                      <div class="col-12">
+                        <div class="popular-Searches">
+                          Popular Searches: 
+                          <ul>
+                            <li><a href="">Mechanical Keyboards</a></li>
+                            <li><a href="">Keyboards</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> -->
+          <!-- Search Product -->
+          <div class="searched-products container">
+            <div class="row">
+              <div class="col-3">
+                <div class="popular-Searches">
+                  Popular Searches:
+                  <ul>
+                    <li><a href="">Mechanical Keyboards</a></li>
+                    <li><a href="">Keyboards</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 ">
+
+
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/b&o1.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc1.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/wc3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product col">
+                    <div class="produt-container">
+                      <a href="" class="product-block">
+                        <div class="grid-item">
+                          <div class="product-img">
+                            <img src="assets/images/keyboard-images/product-images/py3.jpg" class="hero" alt=""
+                              loading="lazy">
+                            <div class="overlay">
+                              <div class="text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                  class="bi bi-eye" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                  <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="item--description">
+                            <div class="collection--title">Vor-Tech</div>
+                            <div class="product--item-title">
+                              <div class="prod--title">Lava 2WR</div>
+                            </div>
+                            <div class="product--item-price">$280.00</div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
 
           </div>
+
         </div>
       </div>
-    </section> -->
+    </div>
 
+    <!-- End of New Bootstrap OffCanvas Search -->
+
+
+    <!-- </div> -->
+  </section>
 
 
 
@@ -350,16 +667,6 @@
         </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
 
     <section class="products-Section">
       <div class="products-Wall">
@@ -1471,17 +1778,18 @@
 
 
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-  <!-- <script src="assets/jquery/dist/jquery.js"></script> -->
+  <!-- BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- My Custom JS files -->
   <script src="assets/js/mobile-menu-button.js"></script>
   <script src="assets/js/sidebar-nav.js"></script>
   <script src="assets/js/popup-fadeIn.js"></script>
-  <script src="assets/js/hideheader.js"></script>
+  <script src="assets/js/search-results.js"></script>
+
 </body>
 
 </html>
