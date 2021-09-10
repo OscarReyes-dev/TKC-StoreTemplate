@@ -138,6 +138,41 @@ header .top-row .item-1 .hamburger{
   display: none;
   cursor: pointer;
 }
+
+
+header .top-row .item-1 .icons-list{
+  display: flex;
+  padding: 0em;
+} 
+
+
+header .top-row .item-1 .icons-list .account-Icon--Mobile{
+  display: none;
+  padding: 4px 10px;
+  background-color: transparent;
+  border: none;
+} 
+header .top-row .item-1 .icons-list li .icon:hover {
+  color: rgb(255, 174, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header .top-row .item-2{
   text-align: center;
   padding: 5px;
@@ -203,7 +238,7 @@ header .top-row .item-3 .icons .icons-list li button{
 header .top-row .item-3 .icons .icons-list li .icon{
   color: rgb(0, 0, 0);
   background-color: transparent;
-  font-size: 23px;
+  font-size: 22px;
 }
 header .top-row .item-3 .icons .icons-list li .icon:hover{
   color: rgb(255, 174, 0);
@@ -406,34 +441,77 @@ header .header-secondary-row .items .product-Gen-List{
 }
 
 
+
+/*---------- Center PopUp Overlay -----------*/
+
+.overlayClosed {
+  display:none;
+}
+.overlayNowOpened{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+
 /*---------- Center PopUp -----------*/
 
+
+.popup-Hidden{
+display: none;
+}
 .center-Popup{
   position: fixed;
   transform: translate(-50%,-50%);
+  border-radius: 35px;
   top: 50%;
   z-index: 9999999;
   left: 50%;
+  background-color: rgb(250, 250, 250);
+}
+.center-Popup .row > * {
+  padding-right: calc(var(--bs-gutter-x) * 1.5);
+  padding-left: calc(var(--bs-gutter-x) * 1.5);
+}
+.center-Popup .btn-primary {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  background-color: #000000;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px  solid black;
+}
+.center-Popup .btn-primary:hover {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  border-color: #000000;
 }
 .center-Popup .popup-Square{
   width: 450px;
-  min-height: 500px;
+  min-height: 550px;
 }
 .center-Popup .popup-Square .main-Column{
   height: 100%;
-  background-color: rgb(255, 255, 255);
 }
 .center-Popup .popup-Square .row{
   height: 100%;
+  justify-content: center;
 }
-    /* Center Popup Top Row Logo */
 
+    /* Center Popup Top Row Logo */
+.center-Popup .popup-Square .top-Row{
+  padding: .5em 0em 4em;
+}
 .center-Popup .popup-Square .row .main-Column .logo{
   text-align: center;
-  padding: 2em;
+  padding: 1em;
 }
 .center-Popup .logo .popup-Logo{
-  width: 100px;
+  width: 80px;
 }
     /* Center Popup Top Row Close Button */
 
@@ -447,85 +525,51 @@ header .header-secondary-row .items .product-Gen-List{
 .center-Popup .hamburger--spring .hamburger-inner::after {
   background-color: #000000;
 }
-    /* Center Popup Center-information */
 
-.center-Popup .center-information{
-  padding: 0px 20px;
+.center-Popup .popup-Square .form-control {
+  line-height: 2;
+  color:rgb(71, 71, 71);
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 25px;
 }
-.center-Popup .center-information .bold-Text{
-  font-size: 25px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  line-height: 25px;
-  padding: 10px 30px;
+
+/* .center-Popup .popup-Square .form-control input:focus{
+  
+} */
+.center-Popup .popup-Square .login-Form--Row{
+  padding-bottom: 1.5em;
 }
-.center-Popup .center-information .sub-Text{
+.center-Popup .popup-Square .login-Form--Row .form{
+  width: 90%;
+}
+.center-Popup .popup-Square .forgot-Password--Row{
+  padding-bottom: 2.5em;
+  margin-left: 1em;
+}
+.center-Popup .popup-Square .forgot-Password--Row .reset-Password--Link a{
+  color: rgb(22, 22, 22);
+}
+.center-Popup .popup-Square .forgot-Password--Row .reset-Password--Link a:hover{
+color: rgb(255, 153, 0);
+}
+.center-Popup .popup-Square .new-Member--Row .footer-Text{
+  font-weight: 700;
   font-size: 15px;
-  /* font-weight: 800; */
-  /* font-weight: 800; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* text-transform: uppercase; */
-  color: rgb(110, 110, 110);
   text-align: center;
-  line-height: 20px;
-  padding: 10px 0px 40px;
 }
-    /* Center Popup Input Form */
-
-.center-Popup #coupon-form{
-text-align: center;
-}
-.center-Popup  #coupon-form .input-box{
-display: inline-block;
-width: 75%;
-}
-.center-Popup #discount{
-  height: auto;
-  border-radius: 50px;
-  padding: 11px 9px;
-  background: #fff;
-  border: 1px solid #000000;
-  /* border: none; */
+.center-Popup .popup-Square .new-Member--Row .footer-Text{
+  font-weight: 700;
   font-size: 15px;
-  font-weight: 400;
-  position: relative;
-  min-height: 40px;
-  width: 100%;
 }
-.center-Popup #coupon-form .button{
-  font-size: .75em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: white;
-  line-height: 1.4;
-  cursor: pointer;
-  background-color: #131313;
-  border: none;
-  font-weight: 600;
- padding: 15px 3em;
- border-radius: 50px;
- margin-top: 1em;
-}
-.center-Popup #coupon-form .button:hover{
-  background-color: rgb(255, 157, 0);
-}
-    /* Center Popup Privacy and Terms Agreement Links */
-
-.center-Popup .privacy-And-Terms{
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.center-Popup .privacy-And-Terms-Links{
+.center-Popup .popup-Square .new-Member--Row .create-Account{
   text-align: center;
-  line-height: 20px;
 }
-.center-Popup .privacy-And-Terms-Links a{ 
-  color: rgb(109, 109, 109);
+.center-Popup .popup-Square .new-Member--Row .create-Account a{
+  font-size: 15px;
+  color: black;
 }
-.center-Popup .privacy-And-Terms-Links a:hover{ 
-  color: rgb(255, 157, 0);
+.center-Popup .popup-Square .new-Member--Row .create-Account a:hover{
+  color:  rgb(255, 153, 0);
 }
 
 /*---------- Sidebar Mobile Menu -----------*/
@@ -597,10 +641,7 @@ display: none;
 .sidebar-navigation nav header .top-row .grid-container .item-3 .icons .icons-list li a{
   font-size: 23px;
 }
-.sidebar-navigation.open-menu{
-  width: calc(100vw - 0%);
-  left: calc(0vw + 0px);
-}
+
 .sidebar-navigation header{
   position: unset;
 }
@@ -644,12 +685,16 @@ max-width: 100%;
   height: calc(100vh - 71px);
   top: 71px;
   position: fixed;
-  /* transition: transform .34s cubic-bezier(.215,.61,.355,1); */
   transition: transform .3s ease-in-out;
   width: calc(100vw - 50px);
   left: calc(-100vw + 50px);
   transform: translateX(0);
   z-index: 6;
+}
+.sidebar-navigation.open-menu{
+  width: calc(100vw - 0%);
+  left: calc(0vw + 0px);
+  transition: transform 3s ease-in-out;
 }
  .sidebar-navigation a {
 	 color: #000000;
@@ -686,7 +731,7 @@ max-width: 100%;
 	 background-color: rgb(0, 0, 0);
 	 font-weight: 700;
 	 float: center;
-	 font-size: 1rem;
+	 font-size: .9rem;
 }
  .sidebar-navigation nav ul li.back a:focus, .sidebar-navigation nav ul li.back a:hover {
 	 color: rgb(255, 255, 255);
@@ -1446,7 +1491,7 @@ padding: 5px 0;
 }
 .prod-Results-Header .results-Title{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0em 0em 0em 0em;
 }
 .prod-Results-Header .product-Amount{
@@ -1459,10 +1504,11 @@ padding: 5px 0;
 }
 .prod-Results-Header .product-Sorting{
   display: flex;
-  margin: 0 1em 0 12em;
+  /* margin: 0 1em 0 12em; */
 }
 .prod-Results-Header .sort-Menu{
   font-size: 17px;
+  justify-content: center;
   font-weight: 500;
   display: flex;
 }
@@ -1493,14 +1539,18 @@ padding: 5px 0;
 .products-Section .filter-box{
   width: 350px;
   overflow-y: auto;
-  background: rgb(255, 255, 255);
+  background: rgb(248, 248, 248);
   height: calc(100vh - 166px);
   position: sticky;
   top: 166px;
 }
+.products-Section .filter-box.hide-Filter--Box{
+  display: none;
+}
 .products-Section .filters-Header-Container{
   text-align: center;
   padding: 3em 0 2em 0;
+  background-color: rgb(248, 248, 248);
 }
 .products-Section .filters-Header{
   color: rgb(0, 0, 0);
@@ -1514,15 +1564,17 @@ padding: 5px 0;
   margin-left: 10px;
 }
 .products-Section .filter-column .accordion-button:hover{
-  background: rgb(255, 255, 255);
+  background: rgb(248, 248, 248);
 }
-.products-Section .accordion{
-  width: 90%;
-  padding: 0em 0em 0em 2em;
+.products-Section .accordion-button{
+  /* width: 90%; */
+  background-color: rgb(248, 248, 248);
+  /* padding: 0em 0em 0em 2em; */
 }
 .products-Section .accordion-item{
   padding: 10px 0px 10px 0px;
-  border-bottom: 1px solid rgb(231, 231, 231);
+  border: none;
+  background-color: rgb(248, 248, 248);
 }
 .products-Section .filter-column{
   position: sticky;
@@ -1558,6 +1610,9 @@ padding: 5px 0;
 .products-Section .products-collection .prod-coll-cont {
   padding: none;
 }
+.products-Section .products-collection .products-Row{
+  padding: 0 1em;
+}
 .products-Section .filter-column button:hover{
   background-color: rgb(255, 255, 255);
 }
@@ -1582,7 +1637,8 @@ padding: 5px 0;
 }
 .products-Section .accordion-button:not(.collapsed) {
   color: rgb(71, 71, 71);
-  background: rgb(255, 255, 255);
+  background: rgb(248, 248, 248);
+  box-shadow: none;
 }
 .products-Section .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -1645,6 +1701,12 @@ header .top-row .item-1{
   padding-top: 15px;
   padding-left: 5px;
 }
+
+header .top-row .item-1 .icons-list .account-Icon--Mobile{
+  display: flex;
+  background-color: transparent;
+  border: none;
+} 
 header .top-row .item-3 .user-account{
 display: none
 }
@@ -1762,42 +1824,43 @@ footer .quick-Links {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 p{
   font-size: 16px;
 }
+
+
+
+
+.center-Popup{
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  /* position: fixed;
+  transform: translate(-50%,-50%);
+  border-radius: 35px;
+  top: 50%;
+  z-index: 9999999;
+  left: 50%;
+  background-color: rgb(250, 250, 250); */
+}
+.center-Popup .popup-Square {
+  width: unset;
+  min-height: unset;
+}
+.center-Popup .row > * {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
     /*---------- Hero Section -----------*/
 .hero-section .hero-grid{
   grid-template-rows: 22em 4em 1fr 1.5em auto 2em;
@@ -1859,8 +1922,8 @@ h1{
 
 
     /*---------- Header Section -----------*/
-header .top-row .grid-container{
-  grid-template-columns: 25% 50% 25%;
+header .top-row .grid-container {
+  grid-template-columns: 32.5% 35% 32.5%;
 }
 header .top-row .grid-container .item-2{
   letter-spacing: -2px;
