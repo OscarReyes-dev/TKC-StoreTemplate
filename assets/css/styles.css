@@ -826,9 +826,9 @@ margin-top: 1em;
   padding: .5em 1.5em;
   font-size: 14px;
 }
-.search-Results-Overlay .popular-Anchor--Links{
-  /* color: rgb(194, 90, 90); */
-}
+/* .search-Results-Overlay .popular-Anchor--Links{
+  color: rgb(194, 90, 90);
+} */
 .search-Results-Overlay .product-Suggestions--Title{
   text-align: left;
   font-size: 20px;
