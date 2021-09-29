@@ -1,24 +1,26 @@
-var filterBoxToggler = document.querySelector(".form-check-input");
+var filterBoxToggler = document.querySelector(".toggle-filters");
 var filterBox = document.querySelector(".filter-box");
+
+var x = document.getElementById("filterbox-Toggler");
 
 filterBoxToggler.addEventListener("click", function() {
     filterBox.classList.toggle("hide-Filter--Box");
+
+
+
+
+    if (x.innerHTML === "Hide Filters") {
+      x.innerHTML = "Show Filters";
+    } else {
+      x.innerHTML = "Hide Filters";
+    }
+
   });
 
 
-
-  // When the screen goes below 900px or less do t Onloa
 
 
 
   
-  // Onload were gonna target the filterBox an
-    // if the screen is less than 991.98px
 
-
-
-
-    $(document).onload(function(event){
-      didScroll = true;
-  });
   

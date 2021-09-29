@@ -17,8 +17,7 @@ setInterval(function()
         hasScrolled();
         didScroll = false;
     }
-},
- );
+},1000);
 
 
 function hasScrolled() {

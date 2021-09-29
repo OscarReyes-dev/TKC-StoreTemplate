@@ -390,9 +390,6 @@
 
     <footer class="cart-Footer">
       <!-- Subtotal -->
-      <div class="cart-Quantity row">
-        <!-- <div class="col cart-Product--Quantity">(5 Items)</div> -->
-      </div>
       <div class="cart-Subtotal row">
         <div class="cart-Subtotal--Text col">
           <!-- <div class=""> -->
@@ -405,11 +402,6 @@
       </div>
       <!-- Checkout Button -->
       <div class="checkout-Button">
-        <!-- <div>
-          <button class="checkout-Btn">
-            CHECKOUT
-          </button>
-        </div> -->
         <div class="checkout-Btn">
           <div class="centered--button">
             <div class="textbox-button">
@@ -749,6 +741,9 @@
     </ul>
   </nav>
 </div>
+
+
+
 <!-- Header -->
 <header id="header">
   <!-- Banner -->
@@ -988,904 +983,1122 @@
 </header>
 
 
-<section class="prod-Results-Header results-Header--onLoad">
 
-  <div class="prod-Results-Container container-fluid">
-    <div class="prod-Results-Row row">
-      <div class="hide-Filters col">
-        <label class="form-check-label" for="flexSwitchCheckChecked">Show Filters</label>
+  <div class="content-Layout container-fluid">
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+<!-- Mobile FilterBox -->
+    <section class="mobile-Filterbox">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="MobileFilterBox" aria-labelledby="offcanvasExampleLabel">
+
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <!-- Filter Header  -->
+
+          <div class="filters-Header-Container">
+            <div class="filters-Header">
+              Filters
+            </div>
+          </div>
+
+  
+          <!-- Chosen Filters -->
+
+
+          <div class="filter-Container container-fluid">
+            <div class="row">
+
+              <div class="form-select-col col">
+                <div class="product-Sorting">
+                  <span class="sort-Menu-Title">Sort By:</span>
+                    <div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option>Price: Low-High</option>
+                        <option>Price: High-Low</option>
+                        <option>Newest to Oldest</option>
+                        <option>Oldest to Newest</option>
+                      </select>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- Filter: Collection Variants -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Series <div class="active-filters anchor-link-color"> (4)</div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <!-- Beginning of Body -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sunset
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Dawn
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Frenzy
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Saturn
+                    </label>
+                  </div>
+                  <!-- End of Body -->
+                </div>
+              </div>
+            </div>
+            
+            <!-- Filter: Connection -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Connection <div class="active-filters anchor-link-color"> (2)</div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <!-- Beginning of Body -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Wireless
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      USB Connection
+                    </label>
+                  </div>
+                  <!-- End of Body -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Filter: Price -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Price <div class="active-filters anchor-link-color"> (3)</div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <!-- Beginning of Body -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      $50 - $100
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      $100 - $150
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      $150 - $250
+                    </label>
+                  </div>
+                  <!-- End of Body -->
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        <footer class="mobile-Filterbox-Footer">
+          <div class="container-fluid">
+            
+            <div class="row">
+              <div class=" hide-Filter-Btn--Col col-12">
+                <button class="footer-Btn close-Btn" class="btn toggle-filters" data-bs-toggle="offcanvas" href="#MobileFilterBox" role="button" aria-controls="offcanvasExample">
+                  Hide Filters
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+        </footer>
+
+
+      </div>
+    </section>
+<!--  -->
+
+<section class="hero-section">
+  <div class="hero-grid">
+    <div class="hero-style2">
+      <div class="hero-style3">
+        <div class="hero-image-style">
+          <img src="assets/images/keyboard-images/collection-images/collection-Hero.jpg" class="hero" alt="" loading="lazy">
         </div>
       </div>
-      <div class="results-Title col">
-        <div class="collection-Name">Vortech <div class="product-Amount"> (254)</div></div>
+    </div>
+    <div class="hero-textbox">
+      <div class="textbox-background">
+        <div class="top-Text">Now Shopping</div>
+        <h1 class="main-Text">VOR-TECH Keyboards</h1>
+        <!-- <div class="textbox-button">
+          <button aria-label="Shop Collection" class="shop-Collection--Btn">
+            <a href="">Shop Now</a>
+          </button>
+        </div> -->
       </div>
-      
-      <div class="sort-Menu col">
-        <div class="product-Sorting">
-          <span class="sort-Menu-Title">Sort By:</span>
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Price: Low-High
+    </div>
+  </div>
+
+  <div class="transparent-bg"></div>
+  </section>
+
+
+    <section class="prod-Results-Header results-Header--onLoad">
+
+      <div class="prod-Results-Container container-fluid">
+        <div class="prod-Results-Row row">
+          <div class="hide-Filters col">
+            <!-- <label class="form-check-label" for="flexSwitchCheckChecked">Show Filters</label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div> -->
+
+
+
+
+    <!-- Desktop Button -->
+            <div class="form-check form-switch desktop-Switch">
+              <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                <label class="btn toggle-filters" for="btn-check"> 
+                  <div id="filterbox-Toggler">Hide Filters</div> 
+                </label>
+            </div>
+
+
+    <!-- Mobile Button -->
+            
+            <div class="form-check form-switch mobile-Switch">
+              <!-- <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off"> -->
+                <!-- <label class="btn toggle-filters" for="btn-check">  -->
+                  <!-- <div id="filterbox-Toggler">Show Filters</div>  -->
+                  <a class="btn toggle-filters" data-bs-toggle="offcanvas" href="#MobileFilterBox" role="button" aria-controls="offcanvasExample">
+                    Show Filters
+                  </a>
+                <!-- </label> -->
+            </div>
+    <!-- 
+
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#MobileFilterBox" aria-controls="offcanvasExample">
+              Show Filters
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Price: Low-High</a></li>
-              <li><a class="dropdown-item" href="#">Price: High-Low</a></li>
-              <li><a class="dropdown-item" href="#">Newest to Oldest</a></li>
-              <li><a class="dropdown-item" href="#">Oldest to Newest</a></li>
-            </ul>
+    -->
+
+
+
+
+          </div>
+
+            <div class="results-Title col">
+              <div class="collection-Name">Vortech <div class="product-Amount"> (254)</div></div>
+            </div>
+          
+          <div class="sort-Menu col">
+            <div class="product-Sorting">
+              <span class="sort-Menu-Title">Sort By:</span>
+              <div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option>Price: Low-High</option>
+                <option>Price: High-Low</option>
+                <option>Newest to Oldest</option>
+                <option>Oldest to Newest</option>
+
+              </select>
+            </div>
+              <!-- <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Price: Low-High
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Price: Low-High</a></li>
+                  <li><a class="dropdown-item" href="#">Price: High-Low</a></li>
+                  <li><a class="dropdown-item" href="#">Newest to Oldest</a></li>
+                  <li><a class="dropdown-item" href="#">Oldest to Newest</a></li>
+                </ul>
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-</section>
+    </section>
 
-<section class="products-Section">
-<div class="products-Wall">
+    <section class="products-Section">
+    <div class="products-Wall">
 
-  <div class="wall">
-    <div class="results">
-      <div class="results-body">
-        <div class="filter-box filterbox-onLoad">
+      <div class="wall">
+        <div class="results">
+          <div class="results-body">
+            <div class="filter-box filterbox-onLoad">
 
-          <div class="www">
-            <div class="filter-column">
-              <div class="ggg">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                  <!-- Filter Header  -->
-                  <div class="filters-Header-Container">
-                    <div class="filters-Header">
-                      Filters
-                    </div>
-                  </div>
-                  <!-- Chosen Filters -->
-                  <div>
-
-                  </div>
-                  <!-- Filter: Collection Variants -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour">
-                        Series <div class="active-filters anchor-link-color"> (4)</div>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingFour">
-                      <div class="accordion-body">
-                        <!-- Beginning of Body -->
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
-                            Sunset
-                          </label>
+              <div class="www">
+                <div class="filter-column">
+                  <div class="ggg">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <!-- Filter Header  -->
+                      <div class="filters-Header-Container">
+                        <div class="filters-Header">
+                          Filters
                         </div>
-
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            Dawn
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            Frenzy
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            Saturn
-                          </label>
-                        </div>
-                        <!-- End of Body -->
                       </div>
-                    </div>
-                  </div>
-                  <!-- Filter: Color -->
-                  <!-- <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Color <div class="active-filters anchor-link-color"> (3)</div>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingThree">
-                      <div class="accordion-body">
+                      <!-- Chosen Filters -->
+                      <div>
 
-                        <div class="container">
-                          <div class="row row-cols-4">
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
+                      </div>
+                      <!-- Filter: Collection Variants -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Series <div class="active-filters anchor-link-color"> (4)</div>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                            <!-- Beginning of Body -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Sunset
+                              </label>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Dawn
+                              </label>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Frenzy
+                              </label>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Saturn
+                              </label>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                
-                              </div>
-                            </div>
+                            <!-- End of Body -->
                           </div>
                         </div>
+                      </div>
                       
+                      <!-- Filter: Connection -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Connection <div class="active-filters anchor-link-color"> (2)</div>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <!-- Beginning of Body -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Wireless
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                USB Connection
+                              </label>
+                            </div>
+                            <!-- End of Body -->
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div> -->
-                  <!-- Filter: Price -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    
+                      <!-- Filter: Price -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
 
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFive">
-                        Price <div class="active-filters anchor-link-color"> (2)</div>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingFive">
-                      <div class="accordion-body">
-                        <!-- Beginning of Body -->
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
-                            $0 - $25
-                          </label>
-                        </div>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Price <div class="active-filters anchor-link-color"> (3)</div>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <!-- Beginning of Body -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                $50 - $100
+                              </label>
+                            </div>
 
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            $25 - $50
-                          </label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                $100 - $150
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                              <label class="form-check-label" for="flexCheckChecked">
+                                $150 - $250
+                              </label>
+                            </div>
+                            <!-- End of Body -->
+                          </div>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                          <label class="form-check-label" for="flexCheckChecked">
-                            $50 - $100
-                          </label>
-                        </div>
-                        <!-- End of Body -->
                       </div>
+
+
+
                     </div>
                   </div>
 
-
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-
-
-
-        </div>
-
-
-        <div class="products-grid">
-          <!-- container with 100vh-->
-          <div class="prod-cont">
-            <!-- inner container with 3000px with overflow scroll -->
-            <div class="prod-scroll">
-
-
-
-
-              <div class="products-collection">
-                <div class="prod-coll-cont container">
-                  <div class="products-Row row row-cols-2 row-cols-sm-2 row-cols-md-3 ">
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="" class="product-block">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Lava 2WR</div>
-                            </div>
-                            <div class="product--item-price">$280.00</div>
-                          </div>
-                          
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">VIEW</div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">Sunset 3TR</div>
-                            </div>
-                            <div class="product--item-price">$200.00</div>
-            
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                    <div class="product col">
-                      <a href="">
-                        <div class="grid-item">
-                          <div class="product-img">
-                            <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
-                            <div class="overlay">
-                              <div class="text">
-                                VIEW
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="item--description">
-                            <div class="collection--title">Vor-Tech</div>
-                            <div class="product--item-title">
-                              <div class="prod--title">RGBW 2XR</div>
-                            </div>
-                            <div class="product--item-price">$120.00</div>
-                          </div>
-            
-                        </div>
-                      </a>
-            
-                    </div>
-                  </div>
-
-                  <div class="load-results-btn centered--button">
-                    <div class="textbox-button">
-                      <button class="add-To-Cart--Btn" aria-label="load more products">
-                        <a>Load More</a>
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
 
 
 
+
+
             </div>
+
+
+            <div class="products-grid">
+              <!-- container with 100vh-->
+              <div class="prod-cont">
+                <!-- inner container with 3000px with overflow scroll -->
+                <div class="prod-scroll">
+
+
+
+
+                  <div class="products-collection">
+                    <div class="prod-coll-cont container">
+                      <div class="products-Row row row-cols-2 row-cols-sm-2 row-cols-md-3 ">
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="" class="product-block">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Lava 2WR</div>
+                                </div>
+                                <div class="product--item-price">$280.00</div>
+                              </div>
+                              
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">VIEW</div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">Sunset 3TR</div>
+                                </div>
+                                <div class="product--item-price">$200.00</div>
+                
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                        <div class="product col">
+                          <a href="">
+                            <div class="grid-item">
+                              <div class="product-img">
+                                <img src="assets/images/keyboard-images/product-images/keyboard-product.jpg" class="hero" alt="" loading="lazy">
+                                <div class="overlay">
+                                  <div class="text">
+                                    VIEW
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="item--description">
+                                <div class="collection--title">Vor-Tech</div>
+                                <div class="product--item-title">
+                                  <div class="prod--title">RGBW 2XR</div>
+                                </div>
+                                <div class="product--item-price">$120.00</div>
+                              </div>
+                
+                            </div>
+                          </a>
+                
+                        </div>
+                      </div>
+
+                      <div class="load-results-btn centered--button">
+                        <div class="textbox-button">
+                          <button class="add-To-Cart--Btn" aria-label="load more products">
+                            <a>Load More</a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+
+
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
 
-</div>
-</section>
+    </div>
+    </section>
+
+
+  </div>
 
 
 
